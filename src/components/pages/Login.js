@@ -1,10 +1,10 @@
 import React from 'react'
-import SignUp from '../forms/LoginForm'
+import LoginForm from '../forms/LoginForm'
 export default function Register() {
     return (
       <div className="container">
       
-      <SignUp/>
+      <LoginForm/>
       </div>
         
   

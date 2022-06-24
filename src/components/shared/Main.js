@@ -4,39 +4,16 @@ import Login from "../pages/Login";
 import Register from "../pages/Register";
 import Password from "../pages/Password";
 
-
 import { Routes, Route } from "react-router-dom";
 
 export default function Main() {
-  return <Routes>
+  return (
+    <Routes>
+      <Route path="/" exact element={<Login />} />
 
-  <Route
+      <Route path="/cadastrar-usuario" exact element={<Register />} />
 
-  path="/"
-  exact
-  element={<Home/>}
-  />
-
-<Route
-
-path="/login"
-exact
-element={<Login/>}
-/>
-
-<Route
-
-path="/cadastrar-produto"
-exact
-element={<Register/>}
-/>
-
-<Route
-
-path="/recuperar-senha"
-exact
-element={<Password/>}
-/>
-
-  </Routes>;
+      <Route path="/recuperar-senha" exact element={<Password />} />
+    </Routes>
+  );
 }

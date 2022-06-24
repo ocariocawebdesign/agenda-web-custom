@@ -37,7 +37,7 @@ function Copyright(props) {
 
 const theme = createTheme();
 
-export default function SignUp() {
+export default function RegisterForm() {
   const reloadPage = () => {
     window.location.reload();
   };
