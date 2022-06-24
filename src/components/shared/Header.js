@@ -38,7 +38,7 @@ export default function Header() {
               </li>
               <li className="nav-item">
                 <NavLink className="nav-link" to="/cadastrar-produto">
-                  Cadastre seu produto
+                  Cadastre seu usuário
                 </NavLink>
               </li>
 
