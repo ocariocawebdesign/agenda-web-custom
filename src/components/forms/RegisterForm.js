@@ -16,6 +16,8 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { useForm, Controller } from "react-hook-form";
 import * as validations from "./validations/register-validation";
 import * as services from "../../services/register-services";
+import Logo from "../../img/logo.png";
+
 
 function Copyright(props) {
   return (
@@ -102,6 +104,7 @@ export default function RegisterForm() {
           {/*<Avatar sx={{ m: 1, bgcolor: 'secondary.main' }}>
           
         </Avatar>*/}
+          <img className="img-profile" src={Logo} alt="Foto perfil" />
           <Typography component="h1" variant="h5">
             Faça seu cadastro.
           </Typography>

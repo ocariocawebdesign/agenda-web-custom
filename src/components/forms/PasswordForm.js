@@ -13,6 +13,7 @@ import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { useForm, Controller } from "react-hook-form";
+import Logo from "../../img/logo.png";
 
 function Copyright(props) {
   return (
@@ -70,6 +71,8 @@ export default function PasswordForm() {
         >
           {/*<Avatar sx={{ m: 1, bgcolor: 'secondary.main' }}>
           </Avatar>*/}
+          <img className="img-profile" src={Logo} alt="Foto perfil" />
+
           <Typography component="h1" variant="h5">
             Email de acesso
           </Typography>
